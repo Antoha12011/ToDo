@@ -40,7 +40,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9jD-2z-fBr" secondAttribute="trailing" id="vSK-uc-lHC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="RJU-Cb-UR5"/>
+                    <navigationItem key="navigationItem" id="RJU-Cb-UR5">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="puu-Gq-EF8"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="9jD-2z-fBr" id="Opr-a1-s75"/>
                     </connections>
