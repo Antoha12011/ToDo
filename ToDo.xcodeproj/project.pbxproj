@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		129E4EB828A54226009F420D /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E4EB728A54226009F420D /* EntryViewController.swift */; };
+		129E4EBA28A5425A009F420D /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E4EB928A5425A009F420D /* TaskViewController.swift */; };
 		12F17B68289EB28400426F03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F17B67289EB28400426F03 /* AppDelegate.swift */; };
 		12F17B6A289EB28400426F03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F17B69289EB28400426F03 /* SceneDelegate.swift */; };
 		12F17B6C289EB28400426F03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F17B6B289EB28400426F03 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		129E4EB728A54226009F420D /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		129E4EB928A5425A009F420D /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		12F17B64289EB28400426F03 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F17B67289EB28400426F03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12F17B69289EB28400426F03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				12F17B72289EB28600426F03 /* LaunchScreen.storyboard */,
 				12F17B75289EB28600426F03 /* Info.plist */,
 				129E4EB728A54226009F420D /* EntryViewController.swift */,
+				129E4EB928A5425A009F420D /* TaskViewController.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				12F17B6C289EB28400426F03 /* ViewController.swift in Sources */,
 				129E4EB828A54226009F420D /* EntryViewController.swift in Sources */,
+				129E4EBA28A5425A009F420D /* TaskViewController.swift in Sources */,
 				12F17B68289EB28400426F03 /* AppDelegate.swift in Sources */,
 				12F17B6A289EB28400426F03 /* SceneDelegate.swift in Sources */,
 			);
