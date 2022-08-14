@@ -20,6 +20,15 @@ class ViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        // User Defaults.
+        if !UserDefaults().bool(forKey: "setup") {
+            UserDefaults().set(true, forKey: "setup")
+            UserDefaults().set(0, forKey: "count")
+        }
+        
+        
+        
     }
     
     @IBAction func didTapAdd() {
