@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="862" y="84"/>
         </scene>
-        <!--View Controller-->
+        <!--Task View Controller-->
         <scene sceneID="nOP-71-e9r">
             <objects>
-                <viewController id="v1I-aE-uZy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="task" id="v1I-aE-uZy" customClass="TaskViewController" customModule="ToDo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="chP-gh-QDv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="1629" y="84"/>
         </scene>
-        <!--View Controller-->
+        <!--Entry View Controller-->
         <scene sceneID="wza-iB-PGT">
             <objects>
-                <viewController id="bm8-sj-In1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="entry" id="bm8-sj-In1" customClass="EntryViewController" customModule="ToDo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PSu-2M-ghD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
