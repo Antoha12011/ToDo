@@ -41,7 +41,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RJU-Cb-UR5">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="puu-Gq-EF8"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="puu-Gq-EF8">
+                            <connections>
+                                <action selector="didTapAdd" destination="BYZ-38-t0r" id="rqF-5K-aVI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="9jD-2z-fBr" id="Opr-a1-s75"/>
@@ -59,7 +63,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="nif-8z-ips"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCS-CR-pnO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -73,9 +77,28 @@
                     <view key="view" contentMode="scaleToFill" id="PSu-2M-ghD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oxo-Zf-EEO">
+                                <rect key="frame" x="20" y="64" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kqV-fT-fcc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="CH8-Ko-cSQ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oxo-Zf-EEO" firstAttribute="top" secondItem="CH8-Ko-cSQ" secondAttribute="top" constant="20" id="AXW-3p-PAu"/>
+                            <constraint firstItem="CH8-Ko-cSQ" firstAttribute="trailing" secondItem="oxo-Zf-EEO" secondAttribute="trailing" constant="20" id="BxS-N0-hY1"/>
+                            <constraint firstItem="oxo-Zf-EEO" firstAttribute="leading" secondItem="CH8-Ko-cSQ" secondAttribute="leading" constant="20" id="EqQ-of-REK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="field" destination="oxo-Zf-EEO" id="Qco-Oo-57a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yqg-Lv-fze" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,6 +129,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

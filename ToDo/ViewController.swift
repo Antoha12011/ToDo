@@ -16,12 +16,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Задачи"
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     @IBAction func didTapAdd() {
       
         let vc = storyboard?.instantiateViewController(withIdentifier: "entry") as! EntryViewController
-        vc.title = "New Task"
+        vc.title = "Новая задача"
         navigationController?.pushViewController(vc, animated: true)
     }
     
