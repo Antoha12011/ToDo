@@ -8,7 +8,7 @@
 import UIKit
 
 class EntryViewController: UIViewController, UITextFieldDelegate {
-
+    
     @IBOutlet var field: UITextField!
     
     
@@ -42,7 +42,7 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
         
         UserDefaults().set(newCount, forKey: "count")
         UserDefaults().set(text, forKey: "задача_\(newCount)")
-     
+        
         
         update?()
         
