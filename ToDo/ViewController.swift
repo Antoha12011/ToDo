@@ -40,7 +40,9 @@ class ViewController: UIViewController {
         let vc = storyboard?.instantiateViewController(withIdentifier: "entry") as! EntryViewController
         vc.title = "Новая задача"
         vc.update = {
-            self.updateTasks()
+            DispatchQueue.main.async {
+                self.updateTasks()
+            }
         }
         navigationController?.pushViewController(vc, animated: true)
     }
