@@ -39,15 +39,15 @@ class ViewController: UIViewController {
         
         for x in 0..<count {
             
-           if let task  = UserDefaults().value(forKey: "task_\(x + 1)") as? String {
-               tasks.append(task)
+            if let task  = UserDefaults().value(forKey: "task_\(x + 1)") as? String {
+                tasks.append(task)
             }
             
         }
     }
     
     @IBAction func didTapAdd() {
-      
+        
         let vc = storyboard?.instantiateViewController(withIdentifier: "entry") as! EntryViewController
         vc.title = "Новая задача"
         vc.update = {
