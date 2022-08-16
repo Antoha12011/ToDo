@@ -18,15 +18,5 @@ class TaskViewController: UIViewController {
         
         label.text = task
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Delete", style: .done, target: self, action: #selector(delegateTask))
     }
-    
-    @objc func delegateTask(){
-        
-        let newCount = count - 1
-        
-        UserDefaults().setValue(newCount, forKey: "count")
-        UserDefaults().setValue(nil, forKey: "task_\(currentPosition)")
-    }
-    
 }
