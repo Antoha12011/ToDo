@@ -23,7 +23,10 @@ class TaskViewController: UIViewController {
     
     @objc func delegateTask(){
         
+        let newCount = count - 1
         
+        UserDefaults().setValue(newCount, forKey: "count")
+        UserDefaults().setValue(nil, forKey: "task_\(currentPosition)")
     }
     
 }

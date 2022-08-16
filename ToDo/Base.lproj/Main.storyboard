@@ -79,9 +79,26 @@
                     <view key="view" contentMode="scaleToFill" id="chP-gh-QDv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaG-Tk-Ypp">
+                                <rect key="frame" x="12" y="56" width="390" height="794"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="nif-8z-ips"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eaG-Tk-Ypp" firstAttribute="leading" secondItem="nif-8z-ips" secondAttribute="leading" constant="12" id="TFX-Zf-naN"/>
+                            <constraint firstItem="nif-8z-ips" firstAttribute="trailing" secondItem="eaG-Tk-Ypp" secondAttribute="trailing" constant="12" id="cdP-XT-r5n"/>
+                            <constraint firstItem="nif-8z-ips" firstAttribute="bottom" secondItem="eaG-Tk-Ypp" secondAttribute="bottom" constant="12" id="qMB-yE-bum"/>
+                            <constraint firstItem="eaG-Tk-Ypp" firstAttribute="top" secondItem="nif-8z-ips" secondAttribute="top" constant="12" id="szv-PO-u1B"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="eaG-Tk-Ypp" id="3bm-eo-Kef"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCS-CR-pnO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
