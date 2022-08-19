@@ -57,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862" y="84"/>
+            <point key="canvasLocation" x="832" y="84"/>
         </scene>
         <!--Task View Controller-->
         <scene sceneID="nOP-71-e9r">
@@ -89,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCS-CR-pnO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2412" y="84"/>
+            <point key="canvasLocation" x="2364" y="84"/>
         </scene>
         <!--Entry View Controller-->
         <scene sceneID="wza-iB-PGT">
@@ -117,13 +117,14 @@
                             <constraint firstItem="oxo-Zf-EEO" firstAttribute="leading" secondItem="CH8-Ko-cSQ" secondAttribute="leading" constant="20" id="EqQ-of-REK"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sIb-yG-eYz"/>
                     <connections>
                         <outlet property="field" destination="oxo-Zf-EEO" id="Qco-Oo-57a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yqg-Lv-fze" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1643" y="84"/>
+            <point key="canvasLocation" x="1613" y="84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="deF-4X-PWO">
