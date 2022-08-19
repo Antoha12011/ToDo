@@ -27,7 +27,6 @@ class ViewController: UIViewController {
             UserDefaults().set(0, forKey: "count")
         }
         
-        
         updateTasks()
     }
     
@@ -41,7 +40,7 @@ class ViewController: UIViewController {
         
         for x in 0..<count {
             
-            if let task  = UserDefaults().value(forKey: "task_\(x + 1)") as? String {
+            if let task  = UserDefaults().value(forKey: "task_\(x+1)") as? String {
                 tasks.append(task)
             }
         }
