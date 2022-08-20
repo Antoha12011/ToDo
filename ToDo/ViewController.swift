@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         view.addSubview(table)
         table.dataSource = self
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
-        }
+    }
     
     @objc private func didTapAdd() {
         let alert = UIAlertController(title: "Новая кнопка", message: "создай новую задачу",
@@ -48,7 +48,7 @@ class ViewController: UIViewController, UITableViewDataSource {
                 }
             }
         }))
-
+        
         present(alert, animated: true)
     }
     
