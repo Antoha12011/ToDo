@@ -38,8 +38,9 @@ class ViewController: UIViewController, UITableViewDataSource {
                 if let text = field.text, !text.isEmpty {
                     
                     DispatchQueue.main.async {
-                        let newEntry = [text]
-                        UserDefaults.standard.set(newEntry, forKey: "items")
+                        var currentItem = UserDefaults.standard.stringArray(forKey: "items") ?? []
+                        currentItem.append(text)
+                        UserDefaults.standard.set(currentItem, forKey: "items")
                         self?.items.append(text)
                         self?.table.reloadData()
                     }
