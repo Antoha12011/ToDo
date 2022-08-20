@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.items = UserDefaults.standard.stringArray(forKey: "items")
+        self.items = UserDefaults.standard.stringArray(forKey: "items") ?? []
         title = "Список дел"
         view.addSubview(table)
         table.dataSource = self
