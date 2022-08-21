@@ -27,7 +27,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     @objc private func didTapAdd() {
-        let alert = UIAlertController(title: "Новая кнопка", message: "создай новую задачу",
+        let alert = UIAlertController(title: "Новая кнопка", message: "Создай новую задачу",
                                       preferredStyle: .alert)
         alert.addTextField { field in
             field.placeholder = "Нажми кнопку..."
