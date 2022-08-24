@@ -4,7 +4,6 @@
 //
 //  Created by Антон Павлов on 06.08.2022.
 //
-
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
